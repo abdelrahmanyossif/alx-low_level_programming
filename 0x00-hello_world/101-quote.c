@@ -1,14 +1,18 @@
-#include <stdio.h>
+#include <unistd.h>
 
-/**main - prints"and that piece of art is useful" - Dora Korpar, 2015-10-19",
- * followed by a new line, to the standard error.
- * Return: Always 1.
+/**
+ * main -Entry point 
+ *
+ * Description: print a qoute usining write function
+ *      write(int fd.const void *buf.sixe_t count)
+ *
+ * Return: 1 (not success)
  */
 
 
 int main(void)
-
 {
-	fwrite(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",59);
+	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n;
+	write(1,qou,59);
 	return (1);
 }
