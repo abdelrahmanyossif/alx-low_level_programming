@@ -3,8 +3,8 @@
 /**
  * print_numbers - prints the numbers, from 0 to 9, followed by a new line
  * Do not print 2 and 4
- *
- * Return: 1 if its uppercase, 0 if not
+ * only use _putchar twice
+ * Return: Always 0 (success)
  */
 
 void print_numbers(void)
