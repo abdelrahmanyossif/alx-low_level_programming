@@ -4,7 +4,7 @@
  * main - check the code for school students.
  * @argc: the number of args
  * @argv: the argument vector
- * 
+ *
  * Return: Always 0.
 */
 int main(int argc, char **argv)
@@ -17,11 +17,11 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	op_func = get_op_func(argv[2];
+	op_func = get_op_func(argv[2]);
 			if (!op_func)
 			printf("Error\n"), exit(99);
 
-			if (!b && (argv[2][0] == '/' ||argv[2][0] == '%'))
+			if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 			printf("Error\n"), exit(100);
 
 			printf("%d\n", op_func(a, b));
