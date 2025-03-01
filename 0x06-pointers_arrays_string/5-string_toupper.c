@@ -1,22 +1,21 @@
 #include "main.h"
-#include <ctype.h>
-
 /**
- * string_toupper - Converts all lowercase letters of a string to uppercase
- * @str: The string to convert
- *
- * Return: A pointer to the resulting string str.
+ * string_toupper - change lowercase to uppercase
+ * @s:string
+ * Return:char
  */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-char *ptr = str;
 
-while (*ptr != '\0')
-{
-if (islower(*ptr))
-{
-*ptr = toupper(*ptr);
+	int i;
+
+i = 0;
+	while (*(s + i))
+	{
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
+		i++;
+	}
+	return (s);
 }
-ptr++;
-}
-return (str); }
+/*Bwave ICT */
