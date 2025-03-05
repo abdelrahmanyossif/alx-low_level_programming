@@ -1,10 +1,10 @@
 #include "main.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
-int _putchar(char c) {
-    return putchar(c);
+int _abs(int n)
+{
+    return abs(n);
 }
